@@ -25,6 +25,8 @@ def bucle_farmeo(ruta_movimiento):
         try:
             while activo:
                 for tecla in ruta_movimiento["bucle_farm"]:
+                    if not activo:
+                        return
                     tecla_codigo = identificar_tecla(tecla["tecla"], MAPEO_TECLAS)
 
                     if tecla_codigo is not None:

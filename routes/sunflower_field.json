@@ -7,8 +7,10 @@
     {"tecla": "S", "duracion":  5.5}
   ],
   "bucle_farm": [
-    {"tecla":  "W", "duracion": 1.5 },
-    {"tecla":  "S", "duracion": 1.5 }
+    {"tecla":  "W", "duracion": 1 },
+    {"tecla":  "D", "duracion": 1 },
+    {"tecla":  "S", "duracion": 1 },
+    {"tecla":  "A", "duracion": 1 }
   ],
   "verificacion": null
 }
