@@ -1,8 +1,9 @@
 import time
 #Funciones
 from src.carga_json import cargar_json
+from src.errores.errores import ErrorMacro
+from src.patrones_movimiento.ejecutar_ruta import realizar_ruta
 from src.rutas import ruta_json_sunflower_fields
-from src.patrones_movimiento.movimiento import movimiento_punto_a_b
 
 def contador():
     print("El programa de ejecutara en 5 segundos, coloque la pantalla de Bee Swarm Simulator como principal")
@@ -11,9 +12,12 @@ def contador():
         time.sleep(1)
 
 def main():
-   ruta = cargar_json.leer_json(ruta_json_sunflower_fields())
-   contador()
-   movimiento_punto_a_b(ruta)
+    try:
+       ruta = cargar_json.leer_json(ruta_json_sunflower_fields())
+       contador()
+       realizar_ruta(ruta)
+    except ErrorMacro as e:
+        print("Ocurrió un error inesperado: ", str(e))
 
 if __name__ == '__main__':
     main()
