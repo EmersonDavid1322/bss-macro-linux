@@ -1,7 +1,7 @@
 import sys
 #Funciones
 from src.errores.errores import ErrorTecla
-from src.patrones_movimiento.movimiento import MAPEO_TECLAS, movimiento_punto_a_b
+from src.patrones_movimiento.ruta_a_b import MAPEO_TECLAS, movimiento_punto_a_b
 from src.patrones_movimiento.validar import validar_teclas
 
 def realizar_ruta(ruta_movimiento):
@@ -11,6 +11,7 @@ def realizar_ruta(ruta_movimiento):
                        campo_ruta=ruta_movimiento["destino"])
         print("Ruta Validada")
         movimiento_punto_a_b(ruta_movimiento)
+        print("Ruta completa")
     except ErrorTecla as error:
         print(str(error))
         print("Error de tecla detectado deteniendo el programa")

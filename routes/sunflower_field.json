@@ -6,5 +6,9 @@
     {"tecla": "D", "duracion":  4},
     {"tecla": "S", "duracion":  5.5}
   ],
+  "bucle_farm": [
+    {"tecla":  "W", "duracion": 1.5 },
+    {"tecla":  "S", "duracion": 1.5 }
+  ],
   "verificacion": null
 }
