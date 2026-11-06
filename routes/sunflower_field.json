@@ -1,0 +1,10 @@
+{
+  "punto_de_partida": null,
+  "destino": "sunflower_field",
+  "patron_camino": [
+    {"tecla": "W", "duracion":  1.5},
+    {"tecla": "D", "duracion":  4},
+    {"tecla": "S", "duracion":  5.5}
+  ],
+  "verificacion": null
+}
