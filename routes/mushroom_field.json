@@ -1,0 +1,14 @@
+{
+  "punto_de_partida": null,
+  "destino": "mushroom_field ",
+  "patron_camino": [
+    {"tecla": "S", "duracion":  7}
+  ],
+  "bucle_farm": [
+    {"tecla":  "W", "duracion": 0.8 },
+    {"tecla":  "D", "duracion": 0.8 },
+    {"tecla":  "S", "duracion": 0.8 },
+    {"tecla":  "A", "duracion": 0.8 }
+  ],
+  "verificacion": null
+}

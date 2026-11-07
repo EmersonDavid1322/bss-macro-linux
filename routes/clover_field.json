@@ -1,0 +1,17 @@
+{
+  "punto_de_partida": null,
+  "destino": "clover_field ",
+  "patron_camino": [
+    {"tecla": "S", "duracion": 2},
+    {"tecla": "A", "duracion": 8.2},
+    {"tecla": "S", "duracion": 1.5},
+    {"tecla": "A", "duracion": 3.5}
+  ],
+  "bucle_farm": [
+    {"tecla":  "W", "duracion": 0.8 },
+    {"tecla":  "D", "duracion": 0.8 },
+    {"tecla":  "S", "duracion": 0.8 },
+    {"tecla":  "A", "duracion": 0.8 }
+  ],
+  "verificacion": null
+}

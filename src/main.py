@@ -1,10 +1,12 @@
+#!/usr/bin/env python3
 import time
 from threading import Thread
+import argparse
 #Funciones
 from src.carga_json import cargar_json
 from src.errores.errores import ErrorMacro
 from src.patrones_movimiento.ejecutar_ruta import realizar_ruta
-from src.rutas import ruta_json_sunflower_fields
+from src.rutas import ruta_json_campo
 from src.patrones_movimiento.moviento_en_campos import bucle_farmeo
 from src.estado_macro import cambiar_estado
 from  src.patrones_movimiento.control_mause import activar_clicks
@@ -15,8 +17,8 @@ def contador():
         print("Segundo: ", i)
         time.sleep(1)
 
-def ejecutar_macro():
-    ruta = cargar_json.leer_json(ruta_json_sunflower_fields())
+def ejecutar_macro(argumentos):
+    ruta = cargar_json.leer_json(ruta_json_campo(argumentos.campo))
     contador()
 
     realizar_ruta(ruta)
@@ -34,8 +36,13 @@ def ejecutar_macro():
     hilo_clicks.join()
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('campo', type=str, help='Nombre del campo')
+    args = parser.parse_args()
     try:
-       ejecutar_macro()
+       ejecutar_macro(argumentos=args)
+    except FileNotFoundError:
+        print(f"EL argumento '{args.campo}' no es un campo existente, por favor ingréselo en ingles y minúsculas")
     except ErrorMacro as e:
         print("Ocurrió un error inesperado: ", str(e))
     except KeyboardInterrupt:

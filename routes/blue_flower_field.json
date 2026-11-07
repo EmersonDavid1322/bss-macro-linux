@@ -1,0 +1,17 @@
+{
+  "punto_de_partida": null,
+  "destino": "blue_flower_field",
+  "patron_camino": [
+    {"tecla": "S", "duracion":  4.5},
+    {"tecla": "A", "duracion":  6.5},
+    {"tecla": "S", "duracion":  1.7},
+    {"tecla": "A", "duracion":  3.8}
+  ],
+  "bucle_farm": [
+    {"tecla":  "W", "duracion": 0.8 },
+    {"tecla":  "D", "duracion": 0.8 },
+    {"tecla":  "S", "duracion": 0.8 },
+    {"tecla":  "A", "duracion": 0.8 }
+  ],
+  "verificacion": null
+}

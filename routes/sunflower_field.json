@@ -2,15 +2,15 @@
   "punto_de_partida": null,
   "destino": "sunflower_field",
   "patron_camino": [
-    {"tecla": "W", "duracion":  1.5},
-    {"tecla": "D", "duracion":  4},
+    {"tecla": "W", "duracion":  1},
+    {"tecla": "D", "duracion":  3.7},
     {"tecla": "S", "duracion":  5.5}
   ],
   "bucle_farm": [
-    {"tecla":  "W", "duracion": 1 },
-    {"tecla":  "D", "duracion": 1 },
-    {"tecla":  "S", "duracion": 1 },
-    {"tecla":  "A", "duracion": 1 }
+    {"tecla":  "W", "duracion": 0.8 },
+    {"tecla":  "D", "duracion": 0.8 },
+    {"tecla":  "S", "duracion": 0.8 },
+    {"tecla":  "A", "duracion": 0.8 }
   ],
   "verificacion": null
 }

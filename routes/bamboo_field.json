@@ -1,0 +1,17 @@
+{
+  "punto_de_partida": null,
+  "destino": "bamboo_field ",
+  "patron_camino": [
+    {"tecla": "S", "duracion": 4},
+    {"tecla": "A", "duracion": 4},
+    {"tecla": "S", "duracion": 7.2},
+    {"tecla": "A", "duracion": 5}
+  ],
+  "bucle_farm": [
+    {"tecla":  "W", "duracion": 0.8 },
+    {"tecla":  "A", "duracion": 1.5 },
+    {"tecla":  "S", "duracion": 0.8 },
+    {"tecla":  "D", "duracion": 1.5 }
+  ],
+  "verificacion": null
+}

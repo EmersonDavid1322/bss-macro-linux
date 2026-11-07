@@ -9,7 +9,8 @@ MAPEO_TECLAS = {
     "W": e.KEY_W,
     "A": e.KEY_A,
     "S": e.KEY_S,
-    "D": e.KEY_D
+    "D": e.KEY_D,
+    "ESPACIO": e.KEY_SPACE
 }
 
 teclas_permitidas = {
